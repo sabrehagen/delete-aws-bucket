@@ -1,6 +1,6 @@
 {
   "name": "delete-aws-bucket",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Delete an Amazon S3 Bucket",
   "main": "index.js",
   "scripts": {
