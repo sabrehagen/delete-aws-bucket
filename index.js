@@ -11,7 +11,7 @@ const deleteBucket = async (Bucket, options) => {
   // if AWS SDK debugging is enabled, log our actions
   const debug = (...args) => {
     if (process.env.AWSJS_DEBUG) {
-      console.log(`delete-s3-bucket | ${Bucket} |`, ...args);
+      console.log(`delete-aws-bucket | ${Bucket} |`, ...args);
     }
   }
 
@@ -19,8 +19,8 @@ const deleteBucket = async (Bucket, options) => {
   await emptyBucket(Bucket, options);
 
   // finally, delete the empty bucket
-  debug('Deleting bucket');
   try {
+    debug('Deleting bucket');
     await s3.deleteBucket({ Bucket }).promise();
   } catch (e) {
     if (e.code === 'NoSuchBucket') {

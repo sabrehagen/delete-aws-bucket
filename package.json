@@ -1,5 +1,5 @@
 {
-  "name": "delete-s3-bucket",
+  "name": "delete-aws-bucket",
   "version": "1.0.3",
   "description": "Delete an Amazon S3 Bucket",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sabrehagen/delete-s3-bucket.git"
+    "url": "git+https://github.com/sabrehagen/delete-aws-bucket.git"
   },
   "keywords": [
     "delete",
@@ -18,9 +18,9 @@
   "author": "Jackson Delahunt",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/sabrehagen/delete-s3-bucket/issues"
+    "url": "https://github.com/sabrehagen/delete-aws-bucket/issues"
   },
-  "homepage": "https://github.com/sabrehagen/delete-s3-bucket#readme",
+  "homepage": "https://github.com/sabrehagen/delete-aws-bucket#readme",
   "dependencies": {
     "aws-sdk": "^2.132.0",
     "empty-aws-bucket": "^1.0.9"
