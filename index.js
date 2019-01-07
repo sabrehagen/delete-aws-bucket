@@ -1,12 +1,13 @@
 const emptyBucket = require('empty-aws-bucket');
 const aws = require('aws-sdk');
-const s3 = new aws.S3();
 
 const deleteBucket = async (Bucket, options) => {
 
   if (options) {
     aws.config.update(options);
   }
+
+  const s3 = new aws.S3();
 
   // if AWS SDK debugging is enabled, log our actions
   const debug = (...args) => {
